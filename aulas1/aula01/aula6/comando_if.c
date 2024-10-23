@@ -26,8 +26,9 @@ int main() {
         if (idade >=18 && idade <= 70) {
        printf("Você é obrigado a votar!\n");
     } else {
-        printf("VocÊ não é obrigado a votar!\n");
-    }
+        if (idade > 70) 
+       
+    
 
     }
 float media = 0.0f;
