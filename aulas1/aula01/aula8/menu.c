@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(){
+int main()
+{
     int opcao = 0;
 
     do
@@ -14,25 +15,36 @@ int main(){
         printf("0 - Sair\n");
         printf("Entre com a opcao =>");
         scanf("%i", &opcao);
-        while(getchar() != '\n'); //limpar o buffer do teclado
+        while (getchar() != '\n')
+            ; // limpar o buffer do teclado
 
-        switch(opcao) {
-            case 1: {
-              system("clear");
-              printf("CONSULTA SALDO\n");
-              printf("Seu saldo eh R$10.00\n");
-            }
-            case 2: printf("Escolha um valor para recarga\n"); break;
-            case 3: printf("Voce naum tem recados\n"); break;
-            case 0: printf("Ate logo!\n"); break;
-            default: printf("Opcao invalida. Tente novamente\n"); 
+        switch (opcao)
+        {
+        case 1:
+        {
+            system("clear");
+            printf("CONSULTA SALDO\n");
+            printf("Seu saldo eh R$10.00\n");
+        }
+        case 2:
+            printf("Escolha um valor para recarga\n");
+            break;
+        case 3:
+            printf("Voce naum tem recados\n");
+            break;
+        case 0:
+            printf("Ate logo!\n");
+            break;
+        default:
+            printf("Opcao invalida. Tente novamente\n");
         }
 
-        if (opcao != 0) {
-        printf("Pressione ENTER para continuar ...");
-        getchar();
+        if (opcao != 0)
+        {
+            printf("Pressione ENTER para continuar ...");
+            getchar();
         }
-    }while (opcao != 0);
+    } while (opcao != 0);
 
     return 0;
 }
