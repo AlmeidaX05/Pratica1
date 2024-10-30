@@ -29,8 +29,6 @@ int main() {
         if (idade > 70) 
        
     
-
-    }
 float media = 0.0f;
 printf("Entre com sua media final: ");
 deu_certo = scanf("%i", &media);
@@ -50,4 +48,5 @@ if (media >= 9.0f && media <= 10.0f) {
     printf("Sua mencao e SR\n");
 }   
     return 0;
+}
 }
